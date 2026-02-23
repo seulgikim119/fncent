@@ -17,14 +17,18 @@
   box-sizing: border-box;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 body.rock {
   overflow: hidden;
 }
 
 .inner {
-  width: 100%;
-  padding: 0 160px;
-  margin: 0 auto;
+  width: 1600px;
+  max-width: 1600px;
+  margin-inline: auto;
 }
 
 header {
@@ -36,14 +40,9 @@ header {
   z-index: 10;
 }
 
-h2 {
-  color: var(--main-black);
-  text-align: center;
-  font-family: "Roboto Serif";
-  font-size: 84px;
-  font-weight: 500;
-  line-height: 1;
-  padding: 24px 0;
+header.sc {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 header .fix {
@@ -54,7 +53,7 @@ header .fix {
   top: 0;
   display: flex;
   transition: .6s;
-  background: var(--main-color);
+  background: var(--main-pink);
 }
 
 header.on .fix {
@@ -62,9 +61,11 @@ header.on .fix {
 }
 
 header .fix .img_box {
-  display: flex;
   flex: 1;
-  background: url(../img/main/ham_menu_img.png) center/cover;
+  background: url(../asset/img/fix_imgbox.jpg) center/cover;
+  font-size: 2rem;
+  color: var(--main-yellow-l);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -72,10 +73,18 @@ header .fix .img_box {
   gap: 20px;
 }
 
+header .fix .img_box p {
+  color: #333;
+  font-family: var(--Playfair);
+  font-size: 3.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 header .fix .gnb {
   flex: 1;
-  background: var(--main-color);
-  color: var(--main-white);
+  background: var(--main-rpink);
+  color: var(--w-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,17 +93,15 @@ header .fix .gnb {
 header .fix .gnb>ul {
   width: 80%;
   height: 80%;
-  display: flex;
   flex-direction: column;
 }
 
 header .fix .gnb>ul>li {
-  display: flex;
   flex: 1;
-  flex-direction: column;
   align-content: center;
   transform: translateY(100px);
-  transition: 1s;
+  transition: 1.0s;
+  /* transition-delay: 0.2s; */
 }
 
 header.on .fix .gnb>ul>li {
@@ -104,15 +111,12 @@ header.on .fix .gnb>ul>li {
 header .fix .gnb>ul>li>a {
   font-size: 5rem;
   font-family: var(--Roboto-serif);
-  display: flex;
 }
 
 header .fix .gnb>ul>li>ul.sub {
   font-size: 1.2rem;
   font-weight: 200;
   margin-block-start: 20px;
-  display: flex;
-  flex-direction: row;
 }
 
 header .fix .gnb>ul>li>ul.sub li {
@@ -125,63 +129,86 @@ header .fix .gnb>ul>li>ul.sub li:last-child {
   padding-inline-end: 0;
 }
 
-
-
 header .inner {
+  height: 100%;
   display: flex;
-  height: 80px;
-  align-items: center;
   justify-content: space-between;
-  background: rgba(26, 26, 26, 0.3);
-}
-
-.inner h1 img {
-  display: flex;
-  width: 164px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-
-.inner nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.inner nav ul {
-  display: flex;
   align-items: center;
-  gap: 96px;
+  color: var(--w-color);
 }
 
-.inner nav ul li {
-  color: var(--main-white);
+header h1 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+
+
+header ul {
+  display: flex;
+}
+
+nav {
+  width: 850px;
+  font-size: 1.2rem;
+}
+
+header.on h1,
+header.on nav,
+header.sc nav {
+  display: none;
+}
+
+nav ul li {
+  flex: 1;
   text-align: center;
-  font-family: "Pretendard Variable";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1;
 }
 
-.inner .ham {
-  display: flex;
-  padding: 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.ham {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transition: .6s;
   cursor: pointer;
+  border-radius: 50%;
 }
 
-.inner .ham ul {
-  display: flex;
+header.on .ham {
+  border: 1px solid var(--w-color);
+  margin-left: auto;
+}
+
+.ham ul {
   flex-direction: column;
-  gap: 14px;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-39%, -39%);
 }
 
-.inner .ham ul li {
-  width: 36px;
-  height: 2px;
-  background: var(--main-white);
-  border-radius: 2px;
+.ham ul li {
+  width: 100%;
+  height: 1px;
+  background: var(--w-color);
+  transform-origin: left top;
+  transition: .6s;
+}
+
+header.on .ham ul li {
+  transform: rotate(45deg);
+}
+
+.ham ul li:nth-child(2) {
+  width: 70%;
+}
+
+header.on .ham ul li:nth-child(2) {
+  display: none;
+}
+
+header.on .ham ul li:nth-child(3) {
+  transform: rotate(-45deg);
 }
