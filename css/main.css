@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+main {
+  width: 100%;
+}
+
+.more {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: .6s;
+  color: var(--main-white);
+}
+
+.more:hover {
+  border-radius: 100px;
+  background: var(--main-color);
+
+}
+
+.main_visual {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_visual .visual_card {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/main/main_visual1.jpg) center/cover;
+}
+
+.main_visual .visual_card2 {
+  background-image: url(../img/main/main_visual2.jpg);
+}
+
+.main_visual .visual_card3 {
+  background-image: url(../img/main/main_visual3.jpg);
+}
+
+.main_visual .visual_card4 {
+  background-image: url(../img/main/main_visual4.jpg);
+}
+
+.main_visual .txt_box {
+  display: flex;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
+  display: flex;
+  padding: 120px 160px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1;
+}
+
+.main_visual .txt_box p {
+  color: var(--main-white);
+  font-family: Paperlogy;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 0%;
+}
+
+.main_visual .txt_box h3 {
+  color: var(--main-white);
+  font-family: Paperlogy;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.main_visual .txt_box ul li:nth-child(1) {
+  color: var(--main-white);
+  font-family: "Paperlogy";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main_visual .txt_box ul li:nth-child(2) {
+  color: var(--main-white);
+  font-family: "Paperlogy";
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.main_visual .txt_box ul li:nth-child(3) {
+  color: var(--main-white);
+  font-family: "Paperlogy";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.main_visual .txt_box ul li:nth-child(4) {
+  color: var(--main-white);
+  font-family: "Paperlogy";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.sub_slide {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  width: 1272px;
+}
+
+.side_box .img_box {
+  width: 400px !important;
+  height: 200px;
+  background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url(../img/main/main_visual1.jpg) center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 40px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.side_box .img_box:nth-child(2) {
+  background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url(../img/main/main_visual2.jpg) center/cover;
+}
+
+.side_box .img_box:nth-child(3) {
+  background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url(../img/main/main_visual3.jpg) bottom/cover;
+}
+
+.side_box .img_box:nth-child(4) {
+  background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url(../img/main/main_visual4.jpg) center/cover;
+}
+
+.side_box .img_box p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 120%;
+  color: var(--main-white);
+  text-align: center;
+  font-family: "Paperlogy";
+}
+
+.side_box .img_box span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--main-white);
+  text-align: center;
+  font-family: "Paperlogy";
+}
+
+
+
+/* news */
+.news {
+  display: flex;
+  padding: 128px 0;
+  flex-direction: column;
+}
+
+
+.move {
+  position: relative;
+  height: 1532px;
+}
+
+.mySwiper {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.mySwiper2 {
+  position: absolute;
+  top: 900px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.news .cards {
+  display: flex;
+  width: 640px;
+  height: 512px;
+  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 80px;
+  background: var(--main-white);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.news .cards img {
+  width: 576px;
+  height: 262px;
+  display: flex;
+  padding: 10px;
+  flex: 1;
+  border-radius: 40px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.news .cards .txt {
+  display: flex;
+  padding: 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.news .cards .txt p {
+  color: var(--main-black);
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+}
+
+.news .cards .txt h4 {
+  color: var(--main-black);
+  text-align: center;
+  font-family: "Pretendard Variable";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.band {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  padding: 30px 0;
+  background: rgba(90, 90, 90, 0.20);
+  font-family: "Roboto Serif";
+  color: var(--main-color);
+  /* font-size: 56px; */
+}
+
+.sband_top {
+  gap: 250px;
+  left: -30px;
+  font-size: 56px;
+}
+
+
+.sband_bottom {
+  top: 570px;
+  gap: 240px;
+  font-size: 46px;
+}
+
+.aband_top {
+  bottom: 600px;
+  gap: 300px;
+  font-size: 52px;
+}
+
+.aband_bottom {
+  bottom: 30px;
+  gap: 250px;
+  font-size: 52px;
+}
+
+
+
+/* f'media */
+.mySwiper_t {
+  height: 1526px;
+}
+
+.media .inner {
+  width: 100%;
+}
