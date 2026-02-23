@@ -62,9 +62,9 @@ header.on .fix {
 }
 
 header .fix .img_box {
-  flex: 1;
-  background: url(../img/main/) center / cover;
   display: flex;
+  flex: 1;
+  background: url(../img/main/ham_menu_img.png) center/cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -84,11 +84,14 @@ header .fix .gnb {
 header .fix .gnb>ul {
   width: 80%;
   height: 80%;
+  display: flex;
   flex-direction: column;
 }
 
 header .fix .gnb>ul>li {
+  display: flex;
   flex: 1;
+  flex-direction: column;
   align-content: center;
   transform: translateY(100px);
   transition: 1s;
@@ -101,12 +104,15 @@ header.on .fix .gnb>ul>li {
 header .fix .gnb>ul>li>a {
   font-size: 5rem;
   font-family: var(--Roboto-serif);
+  display: flex;
 }
 
 header .fix .gnb>ul>li>ul.sub {
   font-size: 1.2rem;
   font-weight: 200;
   margin-block-start: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 header .fix .gnb>ul>li>ul.sub li {
