@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 16,
     slidesPerView: 3,
     watchSlidesProgress: true,
+    loop: true,
     freeMode: true,
     navigation: {
       nextEl: ".sub_slide .swiper-button-next",
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let swiper2 = new Swiper(".main_visual .swiper", {
     slidesPerView: 1,
     spaceBetween: 36,
+    loop: true,
     thumbs: {
       swiper: swiper,
     },
@@ -34,12 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  //f'media
-  //f'media
-  let swiper5 = new Swiper(".mySwiper_t", {
-    direction: 'vertical',    // ← 세로 방향!
-    slidesPerView: 19,    // 또는 보여줄 텍스트 개수 (예: 3)
-    spaceBetween: 16,
+  // F'Media
+  const media_swiper = new Swiper(".mySwiper_t", {
+    direction: "vertical",       // 세로 방향
+    slidesPerView: 5,            // 한 화면에 5개 보이게
+    centeredSlides: true,        // 가운데가 활성
+    loop: true,                  // 무한 반복
+    speed: 600,                  // 이동 속도
+    grabCursor: true,            // 마우스 드래그 커서
+    simulateTouch: true,         // 데스크탑에서도 드래그
   });
 
 
