@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 600,                  // 이동 속도
     grabCursor: true,            // 마우스 드래그 커서
     simulateTouch: true,         // 데스크탑에서도 드래그
+
   });
 
 

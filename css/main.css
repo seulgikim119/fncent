@@ -288,7 +288,7 @@ main {
   display: flex;
   flex-direction: row;
   padding: 64px 160px;
-  gap: 32px;
+  overflow: hidden;
 }
 
 .media .inner .left {
@@ -324,6 +324,7 @@ main {
 }
 
 .media .inner .right {
+  height: 100%;
   display: flex;
   flex: 1;
   padding: 16px;
@@ -341,12 +342,12 @@ main {
 .mySwiper_t .swiper-slide {
   font-size: 50px;
   font-weight: 300;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .mySwiper_t .swiper-slide-active {
   color: var(--main-color);
-  font-size: 52px;
+  font-size: 54px;
   font-weight: 600;
   opacity: 1;
 }
