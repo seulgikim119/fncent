@@ -332,15 +332,13 @@ main {
 
 
 .media .inner .right .swiper-wrapper .swiper-slide {
-  font-size: 50px;
-  font-weight: 300;
   line-height: 130%;
   text-align: center;
 }
 
 
 .mySwiper_t .swiper-slide {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 300;
   opacity: 0.1;
 }
