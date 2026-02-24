@@ -18,63 +18,65 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
+
 </head>
 
 <body>
   <div class="wrap">
     <header>
-      <div class="inner">
-        <h1><a href="#"><img src="./img/main/logo.png" alt="fnc"></a></h1>
-        <nav>
-          <ul class="gnb">
-            <li><a href="#">FNC</a></li>
-            <li><a href="#">ARTIST</a></li>
-            <li><a href="#">COMMUNITY</a></li>
-            <li><a href="#">AUDITION</a></li>
-          </ul><!-- //.gnb -->
-        </nav>
-        <div class="right">
-          <ul id="hamMenu">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div><!-- //.right -->
-      </div><!-- //.inner -->
-      <div class="ham_menu">
-        <div class="all_con">
-          <ul class="list">
-            <li class=""><button type="button">FNC</button>
-              <ul class="sub_list">
+      <div class="fix">
+        <div class="img_box"></div>
+        <div class="gnb">
+          <ul>
+            <li><a href="#">FNC</a>
+              <ul class="sub">
                 <li><a href="#">FNC</a></li>
                 <li><a href="#">BUSINESS</a></li>
                 <li><a href="#">FNC CREATIVE LAB</a></li>
                 <li><a href="#">LOVE FNC</a></li>
                 <li><a href="#">IR</a></li>
-              </ul><!-- //.sub_list -->
+              </ul>
             </li>
-            <li><button type="button">ARTIST</button>
-              <ul class="sub_list">
+            <li><a href="#">ARTIST</a>
+              <ul class="sub">
                 <li><a href="#">SINGER</a></li>
                 <li><a href="#">ACTOR</a></li>
                 <li><a href="#">ENTERTAINER</a></li>
-              </ul><!-- //.sub_list -->
+              </ul>
             </li>
-            <li><button type="button">community</button>
-              <ul class="sub_list">
+            <li><a href="#">community</a>
+              <ul class="sub">
                 <li><a href="#">NEW RELEASE</a></li>
                 <li><a href="#">NOTICE</a></li>
                 <li><a href="#">F'MEDIA</a></li>
-              </ul><!-- //.sub_list -->
+              </ul>
             </li>
-            <li><button type="button">AUDITION</button>
-              <ul class="sub_list">
+            <li><a href="#">AUDITION</a>
+              <ul class="sub">
                 <li><a href="#">AUDITION</a></li>
-              </ul><!-- //.sub_list -->
+              </ul>
             </li>
-          </ul><!-- //.list -->
-        </div><!-- //.all_con -->
-      </div><!-- //.ham_menu -->
+          </ul>
+        </div><!-- //.gnb -->
+      </div><!-- //.fix -->
+      <div class="inner">
+        <h1><a href="#"><img src="./img/main/logo.png" alt="FNC"></a></h1>
+        <nav>
+          <ul>
+            <li><a href="#">FNC</a></li>
+            <li><a href="#">Artist</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Audition</a></li>
+          </ul>
+        </nav>
+        <div class="ham">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div><!-- //.ham -->
+      </div><!-- //.inner -->
     </header>
     <main>
       <div class="main_visual">
@@ -184,7 +186,7 @@
             <span>ACTOR</span>
             <span>ACTOR</span>
           </div><!-- //.aband_bottom -->
-          <div class="swiper mySwiper">
+          <div class="swiper news_singer">
             <div class="swiper-wrapper">
               <div class="card1 cards swiper-slide">
                 <img src="./img/main/newscard1.jpg" alt="유회승">
@@ -237,7 +239,7 @@
               </div><!-- //.card7-->
             </div><!-- //.wiper-wrapper -->
           </div><!-- //.swiper -->
-          <div class="swiper mySwiper2" dir="rtl">
+          <div class="swiper news_acter" dir="rtl">
             <div class="swiper-wrapper">
               <div class="r_card1 cards swiper-slide">
                 <img src="./img/main/r_newscard1.jpg" alt="김서하">
@@ -285,95 +287,103 @@
           </div><!-- //.swiper -->
         </div><!-- //.move-->
       </div><!-- //.news -->
-      <div class="f_media">
-        <div class="tit_media">
-          <h2>F'Media</h2>
-        </div><!-- //.tit_media -->
+      <div class="media">
+        <h2>F'Media</h2>
         <div class="inner">
-          <div class="left swiper mySwiper4">
-            <div class=" swiper-wrapper">
+          <div class="media_left swiper">
+            <div class="swiper-wrapper">
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img1.jpg" />
-                <p>AxMxP (에이엠피) - 그리고 며칠 후 (Thereafter) LIVE CLIP🎤</p>
+                <iframe src="https://www.youtube.com/embed/J-9WIlPhN3A?si=cawUhut2VbcUkkmq" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>첫 컴백도 PASS! 그리고 며칠 후, 곧 돌아올게요. l AxMxP Show : Inside the paradox BEHIND | AxMxPxICK EP.45</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img2.jpg" />
+                <iframe src="https://www.youtube.com/embed/JJBZwW-2Q4g?si=uHXS9aCWtuSuJFSp" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>'신'인 가수 김인성의 여정은 계속된다 | 'Mute is Off' 활동 BEHIND</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img3.jpg" />
-                <p>2026 CNBLUE LIVE '3LOGY' IN SEOUL Making Film</p>
+                <iframe src="https://www.youtube.com/embed/H4tXezKs_lY?si=WCBnXCwqbt_z-EBn" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>CNBLUE (씨엔블루) – 인생찬가 (Anthem of Life) LIVE CLIP @2026 CNBLUE LIVE '3LOGY'</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img4.jpg" />
-                <p>최립우 (CHUEI LI YU) - ‘UxYOUxU’ STAGE CLIP @2025 최립우(CHUEI LI YU) Fan Meeting 'Drawing Yu'</p>
+                <iframe src="https://www.youtube.com/embed/mcvi75Htaqo?si=Wir40viQNBIDv9U7" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>최립우 (CHUEI LI YU) - 1st PHOTO BOOK [WHITE LETTERS] BEHIND FILM</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img5.jpg" />
-                <p>FTISLAND (FT아일랜드) – 'Out of Love' LIVE CLIP @2025 FTISLAND CONCERT 'FTSODE'</p>
+                <iframe src="https://www.youtube.com/embed/pA57NIp0wQQ?si=JuWJA43GZNYuAg7x" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>본 시상식은 스스로를 축하합니다🏆 | 2025 FTISLAND CONCERT 'FTSODE' BEHIND</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img6.jpg" />
-                <p>P1Harmony (피원하모니) - 'Stupid Brain' FULL CAM @2026 MOST WANTED IN LONDON (OVO Arena Wembley)</p>
+                <iframe src="https://www.youtube.com/embed/M5pCtYZbwEQ?si=oH1_1CjAk61jPqfX" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>미식의 나라에서 먹는 칠레맥주 가리비구이 세비체 콩그리오 밀호야스 I 고독한 쥐식가 (孤独のネズミグルメ) in Santiago🐭</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img7.jpg" />
-                <p>승모가 잠든 사이😴 캠든이의 What's in my bag? ASMR</p>
+                <iframe src="https://www.youtube.com/embed/obtUpDyEmi0?si=dKCCjJpa9ATx5I21" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>백현 (BAEKHYUN) - Love Again Covered by 앰퍼샌드원 (AMPERS&ONE) 윤시윤 (SIYUN)</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img8.jpg" />
-                <p>2025 FESTIVAL BEHIND #2 | N.Flying (엔플라잉)</p>
+                <iframe src="https://www.youtube.com/embed/_i5tCdd_XyQ?si=gBMbMgkqxOKvgQ8n" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>2025 N.Flying LIVE ‘&CON4 ENCORE : Let's Roll &4EVER’ BEHIND Ep.01</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img9.jpg" />
-                <p>[Beh!nd Un!corn] Hi-Fi Un!corn - #32 "라일라(LAILA)" PV shooting</p>
+                <iframe src="https://www.youtube.com/embed/fkeGLmlZdaQ?si=8l0Ys0Lg-8EtlR21" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Hi-Fi Un!corn - “HUNGRY HEART” Solo Teaser MIN ver.</p>
               </div>
               <div class="video_box swiper-slide">
-                <img src="./img/main/video_img10.jpg" />
-                <p>캘빈클라인 로운은 언제 봐도 좋🤙다👍 (Behind Film🎥)</p>
+                <iframe src="https://www.youtube.com/embed/yOVLUetO0KY?si=l0asFfRNWxj1E5Iz" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>[정해인] 2026 새해 복 많이 받으세요❤️🐎</p>
               </div>
-            </div><!-- //.swiper-wrapper -->
-          </div><!-- //.left -->
-          <div thumbsSlider="" class="right swiper mySwiper3">
+            </div>
+          </div><!-- //.media_left -->
+          <div class="media_right swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p>AxMxP (에이엠피)</p>
-              </div>
-              <div class="swiper-slide">
-                <p>SF9</p>
-              </div>
-              <div class="swiper-slide">
-                <p>CNBLUE (씨엔블루)</p>
-              </div>
-              <div class="swiper-slide">
-                <p>최립우 (CHUEI LI YU)</p>
-              </div>
-              <div class="swiper-slide">
-                <p>FTISLAND (FT아일랜드)</p>
-              </div>
-              <div class="swiper-slide">
-                <p>P1Harmony (피원하모니)</p>
-              </div>
-              <div class="swiper-slide">
-                <p>앰퍼샌드원 (AMPERS&ONE)</p>
-              </div>
-              <div class="swiper-slide">
-                <p>N.Flying (엔플라잉)</p>
-              </div>
-              <div class="swiper-slide">
-                <p>Hi-Fi Un!corn</p>
-              </div>
-              <div class="swiper-slide">
-                <p>FNC ACTORS & ENTERTAINERS</p>
-              </div>
+              <div class="swiper-slide">AxMxP(에이엠피)</div>
+              <div class="swiper-slide">SF9</div>
+              <div class="swiper-slide">CNBLUE(씨엔블루)</div>
+              <div class="swiper-slide">최립우(CHUEI LI YU)</div>
+              <div class="swiper-slide">FTISLAND(FT아일랜드)</div>
+              <div class="swiper-slide">P1Harmony(피원하모니)</div>
+              <div class="swiper-slide">앰퍼샌드원(AMPERS&ONE)</div>
+              <div class="swiper-slide">N.Flying(엔플라잉)</div>
+              <div class="swiper-slide">Hi-Fi Un!corn</div>
+              <div class="swiper-slide">ACTORS&ENTERTAINERS</div>
             </div><!-- //.swiper-wrapper -->
-          </div><!-- //.right -->
+          </div><!-- //.media_right -->
+
         </div><!-- //.inner -->
         <div class="btn">
           <a href="#" class="more">MORE<i class="fa-solid fa-arrow-right"></i></a>
         </div><!-- //.btn -->
-      </div><!-- //.f_media -->
-
+      </div><!-- //.media -->
       <div class="f_info">
         <h2>F’Info</h2>
         <div class="info">

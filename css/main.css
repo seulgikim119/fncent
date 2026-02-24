@@ -4,18 +4,26 @@ main {
   width: 100%;
 }
 
-
 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 128px 0 64px;
-  font-size: 84px;
-  font-weight: 500;
   font-family: "Roboto Serif";
+  font-size: 84px;
+  font-weight: 600;
+  color: var(--main-black);
+  padding: 128px 0 64px;
 }
 
-.btn a.more {
+.btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.more {
   display: inline-flex;
   padding: 8px 16px;
   justify-content: center;
@@ -23,7 +31,6 @@ h2 {
   gap: 10px;
   transition: .6s;
   color: var(--main-white);
-  padding: 32px
 }
 
 .more:hover {
@@ -80,7 +87,7 @@ h2 {
 
 .main_visual .txt_box h3 {
   color: var(--main-white);
-  font-family: "Paperlogy";
+  font-family: Paperlogy;
   font-size: 64px;
   font-weight: 600;
   line-height: 120%;
@@ -184,7 +191,7 @@ h2 {
   height: 1532px;
 }
 
-.mySwiper {
+.news_singer {
   position: absolute;
   top: 80px;
   left: 0;
@@ -193,7 +200,7 @@ h2 {
   overflow: hidden;
 }
 
-.mySwiper2 {
+.news_acter {
   position: absolute;
   top: 900px;
   left: 0;
@@ -211,7 +218,6 @@ h2 {
   align-items: center;
   border-radius: 80px;
   background: var(--main-white);
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);  */
 }
 
 .news .cards img {
@@ -260,9 +266,11 @@ h2 {
   background: rgba(90, 90, 90, 0.20);
   font-family: "Roboto Serif";
   color: var(--main-color);
+  /* font-size: 56px; */
 }
 
 .sband_top {
+  width: 100%;
   gap: 250px;
   left: -30px;
   font-size: 56px;
@@ -290,85 +298,77 @@ h2 {
 
 
 /* f'media */
-
-.f_media {
+.media .inner {
   width: 100%;
+  height: 80vh;
   display: flex;
   flex: 1;
-  flex-direction: column;
-  padding: 128px 160px;
-  justify-content: center;
   align-items: center;
+  /* flex-direction: row; */
 }
 
-.f_media .inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
+.media .inner .media_left {
+  height: 70vh;
+  /* padding: 16px; */
+  /* justify-content: center; */
+  /* background: yellow; */
 }
 
-.f_media .inner .left {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 16px 0;
-  flex: 1;
-}
-
-.f_media .inner .left .swiper-slide {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
-.f_media .inner .left .swiper-slide img {
-  width: 900px;
-  height: 450px;
-  display: flex;
-  object-fit: cover;
-  /* center cover -> cover 수정 */
+.media .inner .media_left .video_box {
   padding: 16px 0;
 }
 
-.f_media .inner .left .swiper-slide p {
-  text-align: left;
-  font-weight: 500;
-  font-size: 28px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+.media .inner .media_left .video_box iframe {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  /* flex: 1; */
 }
 
-.f_media .inner .right {
-  width: 100%;
-  height: 450px;
-  /* 왼쪽 영상 높이와 일치시킴 */
+.media .inner .media_left .video_box p {
   display: flex;
-  flex: 1;
+  align-items: center;
   padding: 16px;
+  height: 10vh;
 }
 
-.f_media .inner .right .swiper-slide {
-  display: flex;
-  flex-direction: column;
+.media_right {
+  height: 70vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  /* background: #ccc; */
+
 }
 
-.f_media .inner .right .swiper-slide p {
+.media_right .swiper-wrapper .swiper-slide {
   text-align: center;
-  font-size: 50px;
-  font-weight: 500;
+  align-content: center;
 }
 
-.f_media .btn {
+
+.media_right .swiper-slide {
+  font-size: 36px;
+  font-weight: 300;
+  opacity: 0.1;
+}
+
+.media_right .swiper-slide-active {
+  color: var(--main-color);
+  font-size: 46px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.media .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 0;
 }
 
-.f_media .btn a.more {
+.media .btn a.more {
   color: var(--main-black);
   background: var(--main-white);
   border-radius: 100px;
@@ -377,16 +377,15 @@ h2 {
   font-family: "Roboto Serif";
 }
 
-.f_media .btn a.more p {
+.media .btn a.more p {
   color: var(--main-black);
 }
 
-.f_media .btn a.more:hover {
+.media .btn a.more:hover {
   border-radius: 100px;
   background: var(--main-color);
   color: var(--main-white);
 }
-
 
 /* F'info */
 
@@ -502,14 +501,14 @@ h2 {
   color: var(--main-black);
 }
 
-.f_media .btn {
+.f_info .info .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 0;
 }
 
-.f_media .btn a.more {
+.f_info .info .btn a.more {
   color: var(--main-black);
   background: var(--main-white);
   border-radius: 100px;
@@ -518,13 +517,12 @@ h2 {
   font-family: "Roboto Serif";
 }
 
-.f_media .btn a.more p {
+.f_info .info .btn a.more p {
   color: var(--main-black);
 }
 
-.f_media .btn a.more:hover {
+.f_info .info .btn a.more:hover {
   border-radius: 100px;
   background: var(--main-color);
   color: var(--main-white);
-
 }
