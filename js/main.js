@@ -22,48 +22,52 @@ document.addEventListener('DOMContentLoaded', () => {
   // news slide
 
   // 위쪽 (싱어 카드) - 기존 그대로
-  let swiper3 = new Swiper(".news_singer", {
+  let cards_singer = new Swiper(".news_singer", {
     slidesPerView: 'auto',
     centeredSlides: true,
     spaceBetween: 250,
-    loop: true,
   });
 
   // 아래쪽 (액터 카드) - 새로 추가
-  let swiper4 = new Swiper(".news_acter", {
+  let cards_acter = new Swiper(".news_acter", {
     slidesPerView: 'auto',
     centeredSlides: true,
     spaceBetween: 100,
-    loop: true,
+
 
   });
 
 
-  // F'Media
-  //텍스트 스와이퍼
-  let swiper5 = new Swiper(".media_right", {
+
+  let media_video = new Swiper(".media_left", {
+    loop: true,
     direction: 'vertical',
-    spaceBetween: 60,
-    slidesPerView: 5,
-    freeMode: true,
+    spaceBetween: 16,
+    slidesPerView: 1,
     watchSlidesProgress: true,
-    loop: true,
   });
 
-  //썸네일스와이퍼
-  let swiper6 = new Swiper(".media_left", {
-    direction: 'vertical',
-    spaceBetween: 0,
+
+  let media_txt = new Swiper(".media_right", {
     loop: true,
+    direction: 'vertical',
+    centeredSlides: true,
+    slidesPerView: 5,
+    spaceBetween: 16,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: swiper5,
+      swiper: media_video,
     },
   });
 
+
+  //info 세션
+  btn.addEventListener('click', (e) => {
+    console.log('버튼이 클릭됨', e);
+  });
 
 
 }); //dom end
