@@ -350,12 +350,12 @@ h2 {
   padding: 16px;
 }
 
-.f_media .inner .right .swiper_slide {
+.f_media .inner .right .swiper-slide {
   display: flex;
   flex-direction: column;
 }
 
-.f_media .inner .right .swiper_slide p {
+.f_media .inner .right .swiper-slide p {
   text-align: center;
   font-size: 50px;
   font-weight: 500;
