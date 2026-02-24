@@ -18,66 +18,63 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
-  <!-- 내 css -->
-  <!-- 내 media css -->
-
-
-  <!-- 내 js -->
-
 </head>
 
 <body>
   <div class="wrap">
     <header>
-      <div class="fix">
-        <div class="img_box"></div>
-        <div class="gnb">
-          <ul>
-            <li><a href="#">FNC</a>
-              <ul class="sub">
+      <div class="inner">
+        <h1><a href="#"><img src="/img/main/logo.png" alt="fnc"></a></h1>
+        <nav>
+          <ul class="gnb">
+            <li><a href="#">FNC</a></li>
+            <li><a href="#">ARTIST</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+            <li><a href="#">AUDITION</a></li>
+          </ul><!-- //.gnb -->
+        </nav>
+        <div class="right">
+          <ul id="hamMenu">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div><!-- //.right -->
+      </div><!-- //.inner -->
+      <div class="ham_menu">
+        <div class="all_con">
+          <ul class="list">
+            <li class=""><button type="button">FNC</button>
+              <ul class="sub_list">
                 <li><a href="#">FNC</a></li>
                 <li><a href="#">BUSINESS</a></li>
                 <li><a href="#">FNC CREATIVE LAB</a></li>
                 <li><a href="#">LOVE FNC</a></li>
                 <li><a href="#">IR</a></li>
-              </ul>
-            <li><a href="#">ARTIST</a>
-              <ul class="sub">
+              </ul><!-- //.sub_list -->
+            </li>
+            <li><button type="button">ARTIST</button>
+              <ul class="sub_list">
                 <li><a href="#">SINGER</a></li>
                 <li><a href="#">ACTOR</a></li>
                 <li><a href="#">ENTERTAINER</a></li>
-              </ul>
-            <li><a href="#">community</a>
-              <ul class="sub">
+              </ul><!-- //.sub_list -->
+            </li>
+            <li><button type="button">community</button>
+              <ul class="sub_list">
                 <li><a href="#">NEW RELEASE</a></li>
                 <li><a href="#">NOTICE</a></li>
                 <li><a href="#">F'MEDIA</a></li>
-              </ul>
-            <li><a href="#">AUDITION</a>
-              <ul class="sub">
+              </ul><!-- //.sub_list -->
+            </li>
+            <li><button type="button">AUDITION</button>
+              <ul class="sub_list">
                 <li><a href="#">AUDITION</a></li>
-              </ul>
-          </ul>
-        </div>
-      </div>
-      <div class="inner">
-        <h1><a href="#"></a></h1>
-        <nav>
-          <ul>
-            <li><a href="#">FNC</a></li>
-            <li><a href="#">ARTIST</a></li>
-            <li><a href="#">COMMUNITY</a></li>
-            <li><a href="#">AUDITION</a></li>
-          </ul>
-        </nav>
-        <div class="ham">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
+              </ul><!-- //.sub_list -->
+            </li>
+          </ul><!-- //.list -->
+        </div><!-- //.all_con -->
+      </div><!-- //.ham_menu -->
     </header>
     <main>
       <div class="main_visual">
@@ -288,36 +285,95 @@
           </div><!-- //.swiper -->
         </div><!-- //.move-->
       </div><!-- //.news -->
-      <div class="media">
+      <div class="f_media">
         <div class="tit_media">
           <h2>F'Media</h2>
         </div><!-- //.tit_media -->
         <div class="inner">
-          <div class="left">
-            <a href="#" class="video_box">
-              <img src="./img/main/video_img1.jpg" alt="AxMxP">
-              <p>AxMxP (에이엠피) - 그리고 며칠 후 (Thereafter) LIVE CLIP🎤</p>
-            </a>
-          </div><!-- //.left -->
-          <div class="right swiper mySwiper_t">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">AxMxP(에이엠피)</div>
-              <div class="swiper-slide">SF9</div>
-              <div class="swiper-slide">CNBLUE(씨엔블루)</div>
-              <div class="swiper-slide">최립우(CHUEI LI YU)</div>
-              <div class="swiper-slide">FTISLAND(FT아일랜드)</div>
-              <div class="swiper-slide">P1Harmony(피원하모니)</div>
-              <div class="swiper-slide">앰퍼샌드원(AMPERS&ONE)</div>
-              <div class="swiper-slide">N.Flying(엔플라잉)</div>
-              <div class="swiper-slide">Hi-Fi Un!corn</div>
-              <div class="swiper-slide">ACTORS&ENTERTAINERS</div>
+          <div class="left swiper mySwiper4">
+            <div class=" swiper-wrapper">
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img1.jpg" />
+                <p>AxMxP (에이엠피) - 그리고 며칠 후 (Thereafter) LIVE CLIP🎤</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img2.jpg" />
+                <p>'신'인 가수 김인성의 여정은 계속된다 | 'Mute is Off' 활동 BEHIND</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img3.jpg" />
+                <p>2026 CNBLUE LIVE '3LOGY' IN SEOUL Making Film</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img4.jpg" />
+                <p>최립우 (CHUEI LI YU) - ‘UxYOUxU’ STAGE CLIP @2025 최립우(CHUEI LI YU) Fan Meeting 'Drawing Yu'</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img5.jpg" />
+                <p>FTISLAND (FT아일랜드) – 'Out of Love' LIVE CLIP @2025 FTISLAND CONCERT 'FTSODE'</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img6.jpg" />
+                <p>P1Harmony (피원하모니) - 'Stupid Brain' FULL CAM @2026 MOST WANTED IN LONDON (OVO Arena Wembley)</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img7.jpg" />
+                <p>승모가 잠든 사이😴 캠든이의 What's in my bag? ASMR</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img8.jpg" />
+                <p>2025 FESTIVAL BEHIND #2 | N.Flying (엔플라잉)</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img9.jpg" />
+                <p>[Beh!nd Un!corn] Hi-Fi Un!corn - #32 "라일라(LAILA)" PV shooting</p>
+              </div>
+              <div class="video_box swiper-slide">
+                <img src="/img/main/video_img10.jpg" />
+                <p>캘빈클라인 로운은 언제 봐도 좋🤙다👍 (Behind Film🎥)</p>
+              </div>
             </div><!-- //.swiper-wrapper -->
-          </div><!-- //.right.swiper.mySwiper_t -->
+          </div><!-- //.left -->
+          <div thumbsSlider="" class="right swiper mySwiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper_slide">
+                <p>AxMxP (에이엠피)</p>
+              </div>
+              <div class="swiper_slide">
+                <p>SF9</p>
+              </div>
+              <div class="swiper_slide">
+                <p>CNBLUE (씨엔블루)</p>
+              </div>
+              <div class="swiper_slide">
+                <p>최립우 (CHUEI LI YU)</p>
+              </div>
+              <div class="swiper_slide">
+                <p>FTISLAND (FT아일랜드)</p>
+              </div>
+              <div class="swiper_slide">
+                <p>P1Harmony (피원하모니)</p>
+              </div>
+              <div class="swiper_slide">
+                <p>앰퍼샌드원 (AMPERS&ONE)</p>
+              </div>
+              <div class="swiper_slide">
+                <p>N.Flying (엔플라잉)</p>
+              </div>
+              <div class="swiper_slide">
+                <p>Hi-Fi Un!corn</p>
+              </div>
+              <div class="swiper_slide">
+                <p>FNC ACTORS & ENTERTAINERS</p>
+              </div>
+            </div><!-- //.swiper-wrapper -->
+          </div><!-- //.right -->
         </div><!-- //.inner -->
         <div class="btn">
           <a href="#" class="more">MORE<i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div><!-- //.media -->
+        </div><!-- //.btn -->
+      </div><!-- //.f_media -->
+
       <div class="f_info">
         <h2>F’Info</h2>
         <div class="info">

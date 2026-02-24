@@ -37,18 +37,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // F'Media
-  const media_swiper = new Swiper(".mySwiper_t", {
-    direction: "vertical",       // 세로 방향
-    slidesPerView: 5,            // 한 화면에 5개 보이게
-    centeredSlides: true,        // 가운데가 활성
-    loop: true,                  // 무한 반복
-    speed: 600,                  // 이동 속도
-    grabCursor: true,            // 마우스 드래그 커서
-    simulateTouch: true,         // 데스크탑에서도 드래그
-    slideToClickedSlide: true
+  //텍스트 스와이퍼
+  let swiper5 = new Swiper(".mySwiper3", {
+    direction: 'vertical',
+    spaceBetween: 60,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
   });
 
-
+  //썸네일스와이퍼
+  let swiper6 = new Swiper(".mySwiper4", {
+    spaceBetween: 16,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper5,
+    },
+  });
 
 
 

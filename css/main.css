@@ -291,40 +291,24 @@ h2 {
 
 /* f'media */
 
-
-.mySwiper_t {
-  height: 1526px;
-}
-
-
-.media .btn a.more {
-  color: var(--main-black);
-  background: var(--main-white);
-  border-radius: 100px;
-  padding: 16px 32px;
-  font-size: 26px;
-}
-
-.media .btn a.more:hover {
-  border-radius: 100px;
-  background: var(--main-color);
-}
-
-.media .tit_media {
+.f_media {
+  width: 100%;
   display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 128px 160px;
   justify-content: center;
   align-items: center;
 }
 
-.media .inner {
-  height: 670px;
+.f_media .inner {
   display: flex;
   flex-direction: row;
-  padding: 64px 160px;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-.media .inner .left {
+.f_media .inner .left {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -332,64 +316,75 @@ h2 {
   flex: 1;
 }
 
-.media .inner .left .video_box {
+.f_media .inner .left .swiper-slide {
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
-.media .inner .left .video_box img {
+.f_media .inner .left .swiper-slide img {
   width: 900px;
   height: 450px;
   display: flex;
   object-fit: cover;
+  /* center cover -> cover 수정 */
   padding: 16px 0;
 }
 
-.media .inner .left .video_box p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 0;
+.f_media .inner .left .swiper-slide p {
+  text-align: left;
+  font-weight: 500;
   font-size: 28px;
-  font-family: "Pretendard Variable";
-  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
-.media .inner .right {
-  height: 100%;
+.f_media .inner .right {
+  width: 100%;
+  height: 450px;
+  /* 왼쪽 영상 높이와 일치시킴 */
   display: flex;
   flex: 1;
   padding: 16px;
 }
 
+.f_media .inner .right .swiper_slide {
+  display: flex;
+  flex-direction: column;
+}
 
-.media .inner .right .swiper-wrapper .swiper-slide {
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 130%;
+.f_media .inner .right .swiper_slide p {
   text-align: center;
-}
-
-
-.mySwiper_t .swiper-slide {
   font-size: 50px;
-  font-weight: 300;
-  opacity: 0.1;
+  font-weight: 500;
 }
 
-.mySwiper_t .swiper-slide-active {
-  color: var(--main-color);
-  font-size: 54px;
-  font-weight: 600;
-  opacity: 1;
-}
-
-.media .btn {
-  padding: 64px auto;
+.f_media .btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px 0;
+}
+
+.f_media .btn a.more {
+  color: var(--main-black);
+  background: var(--main-white);
+  border-radius: 100px;
+  padding: 16px 32px;
+  font-size: 26px;
+  font-family: "Roboto Serif";
+}
+
+.f_media .btn a.more p {
+  color: var(--main-black);
+}
+
+.f_media .btn a.more:hover {
+  border-radius: 100px;
+  background: var(--main-color);
+  color: var(--main-white);
 }
 
 
@@ -507,17 +502,29 @@ h2 {
   color: var(--main-black);
 }
 
-.f_info .info .btn {
-  padding: 32px 0;
+.f_media .btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px 0;
 }
 
-.f_info .info .btn p {
-  color: #5a5a5a;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 150%;
+.f_media .btn a.more {
+  color: var(--main-black);
+  background: var(--main-white);
+  border-radius: 100px;
+  padding: 16px 32px;
+  font-size: 26px;
   font-family: "Roboto Serif";
+}
+
+.f_media .btn a.more p {
+  color: var(--main-black);
+}
+
+.f_media .btn a.more:hover {
+  border-radius: 100px;
+  background: var(--main-color);
+  color: var(--main-white);
+
 }
