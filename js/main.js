@@ -44,12 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     direction: 'vertical',
     spaceBetween: 16,
     slidesPerView: 1,
-<<<<<<< HEAD
     watchSlidesProgress: true,
-=======
-    freeMode: true,
-    // watchSlidesProgress: true,
->>>>>>> 3620646
   });
 
 
@@ -70,14 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   //info 세션
-<<<<<<< HEAD
   btn.addEventListener('click', (e) => {
     console.log('버튼이 클릭됨', e);
   });
-=======
-
-  let
->>>>>>> 3620646
 
 
 }); //dom end
