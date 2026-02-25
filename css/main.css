@@ -46,6 +46,8 @@ h2 {
   background: #ccc;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+
 }
 
 .main_visual .visual_card {
@@ -198,6 +200,7 @@ h2 {
   width: 100%;
   z-index: 2;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .news_acter {
@@ -207,6 +210,8 @@ h2 {
   width: 100%;
   z-index: 2;
   overflow: hidden;
+  cursor: pointer;
+
 }
 
 .news .cards {
@@ -345,6 +350,7 @@ h2 {
 .media_right .swiper-wrapper .swiper-slide {
   text-align: center;
   align-content: center;
+  cursor: pointer;
 }
 
 
@@ -430,7 +436,7 @@ h2 {
   border-radius: 30px;
   border: 1px solid var(--main-black);
   padding: 32px 0;
-
+  cursor: pointer;
 }
 
 
