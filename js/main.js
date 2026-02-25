@@ -66,8 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //info 세션
   btn.addEventListener('click', (e) => {
-    console.log('버튼이 클릭됨', e);
+
   });
+
+
+
 
 
 }); //dom end
