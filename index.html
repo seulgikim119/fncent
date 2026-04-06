@@ -390,17 +390,20 @@
       </div><!-- //.media -->
       <div class="f_info">
         <h2>F’Info</h2>
-        <div class="info">
+        <div class="info_wrap">
           <div class="notice">
             <h3>CONNECT FNC </h3>
             <div class="info_txt">
-              <div class="menu">
-                <button class="menu_tab is_active" data_target="notice_box">NOTICE</button>
-                <button class="menu_tab" data_target="release_box">New Release</button>
-                <button class="menu_tab" data_target="ir_box">IR</button>
+              <div class="menu" role="tablist" aria-label="F'Info menu">
+                <button class="menu_tab is_active" type="button" role="tab" id="tab_notice_box" data-target="notice_box"
+                  aria-controls="notice_box" aria-selected="true">NOTICE</button>
+                <button class="menu_tab" type="button" role="tab" id="tab_release_box" data-target="release_box"
+                  aria-controls="release_box" aria-selected="false">New Release</button>
+                <button class="menu_tab" type="button" role="tab" id="tab_ir_box" data-target="ir_box"
+                  aria-controls="ir_box" aria-selected="false">IR</button>
               </div><!-- //.menu -->
               <div class="sub_box">
-                <div class="notice_box is_active">
+                <div class="n_box notice_box is_active" id="notice_box" role="tabpanel" aria-labelledby="tab_notice_box">
                   <ul>
                     <li>
                       <p>팬미팅 |<span> 2026 N.Flying FAN MEETING ‘우.사.합 : 우리 사소한 얘기 좀 합시다’ 안내</span></p>26.02.13
@@ -422,7 +425,7 @@
                     </li><!-- //.txt -->
                   </ul>
                 </div>
-                <div class="release_box">
+                <div class="n_box release_box" id="release_box" role="tabpanel" aria-labelledby="tab_release_box" hidden>
                   <ul>
                     <li>
                       <p>ALBUM | <span>유회승 (엔플라잉) Digital Single [도망가자 (Run With Me)] 발매</span></p>26.02.13
@@ -441,7 +444,7 @@
                     </li><!-- //.txt -->
                   </ul>
                 </div><!-- //.release_box -->
-                <div class="ir_box">
+                <div class="n_box ir_box" id="ir_box" role="tabpanel" aria-labelledby="tab_ir_box" hidden>
                   <ul>
                     <li>
                       <p>[공고] 제19기 결산공고</p>
@@ -466,7 +469,7 @@
           <div class="btn">
             <a href="#" class="more">MORE<i class="fa-solid fa-arrow-right"></i></a>
           </div><!-- //.btn -->
-        </div><!-- //.info -->
+        </div><!-- //.info_wrap -->
       </div><!-- //.f_info -->
     </main>
     <footer>
